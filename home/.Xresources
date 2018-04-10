@@ -1,0 +1,6 @@
+#include ".xrdb/nord"
+#include ".xrdb/rofi"
+
+URxvt.saveLines:3000
+URxvt.scrollBar: false
+URxvt.font: xft:monaco:size=8
