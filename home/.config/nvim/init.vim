@@ -74,7 +74,8 @@ let NERDTreeMapHelp=''
 let NERDTreeMapOpenInTab = '<C-T>'
 let NERDTreeMapOpenSplit = '<C-S>'
 let NERDTreeMapOpenVSplit = '<C-V>'
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.git', '\.pyc$']
+let NERDTreeShowHidden=1
 
 set wildignore+=node_modules/**
 
