@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+t exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -54,11 +54,9 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# split in horizontal orientation
-bindsym $mod+s split horizontal
-
-# split in vertical orientation
-bindsym $mod+v split vertical
+# Sticking to vim terminology
+bindsym $mod+s split vertical
+bindsym $mod+v split horizontal
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
