@@ -19,8 +19,8 @@ alias make='make -j6'
 alias cmake='cmake -GNinja -DCMAKE_BUILD_TYPE="RelWithDebInfo"'
 
 # clipboard
-alias cbfetch='xclip -selection c'
-alias cbput='xclip -selection c -o'
+alias cbput='xclip -selection c'
+alias cbfetch='xclip -selection c -o'
 
 # misc
 alias c='clear'
