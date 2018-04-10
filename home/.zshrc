@@ -12,7 +12,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme robbyrussell
 antigen apply
 
-alias vim=nvim
-for file in "$HOME/.zsh/*.zsh"; do
+for file in $HOME/.zsh/*.zsh; do
   source $file
 done
