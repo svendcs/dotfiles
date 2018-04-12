@@ -105,7 +105,7 @@ set_from_resource $fg i3wm.foreground #d8dee8
 set_from_resource $c1 i3wm.color1 #bf616a
 set_from_resource $c4 i3wm.color4 #81a1c1
 
-font pango:Noto Sans 8
+font pango:FontAwesome, Noto Sans 8
 
 bar {
     status_command i3status
@@ -139,9 +139,9 @@ hide_edge_borders smart
 
 
 # class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $c1
-client.focused_inactive $bg     $bg     $fg  $bg       $c5
-client.unfocused        $bg     $bg     $fg  $bg       $c5
+client.focused          $bg     $bg     $fg  $bg       $c4
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
 client.urgent           $bg     $bg     $fg  $bg       $c3
 client.placeholder      $bg     $bg     $fg  $bg       $bg
 client.background $bg
