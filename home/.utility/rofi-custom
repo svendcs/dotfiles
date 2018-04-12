@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 rofi -sidebar-mode \
--modi run, drun \
+-modi run,drun \
 -lines 12 \
 -padding 18 \
 -width 60 \
