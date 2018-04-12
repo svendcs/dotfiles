@@ -1,0 +1,22 @@
+[user]
+  name = Svend Christian Svendsen
+  email = svendcsvendsen@gmail.com
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+[difftool]
+  prompt = false
+[mergetool]
+  prompt = false
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+[hub]
+  protocol = ssh
+[push]
+	default = simple
+[pull]
+	default = simple
