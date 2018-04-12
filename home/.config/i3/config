@@ -111,6 +111,7 @@ bar {
     status_command i3status
     position top
     strip_workspace_numbers yes
+    height 25
 
     colors {
         background $bg
