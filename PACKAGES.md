@@ -3,7 +3,6 @@ Arch Repos
 nvim
 tmux
 zsh
-rxvt-unicode
 rofi
 dunst
 noto-fonts
@@ -15,3 +14,4 @@ trizen
 neovim-plug
 antigen-git
 ttf-ms-fonts
+rxvt-unicode-pixbuf
