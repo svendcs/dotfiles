@@ -12,7 +12,7 @@
 [mergetool]
   prompt = false
 [core]
-  editor = vim
+  editor = nvim
   excludesfile = ~/.gitignore
 [hub]
   protocol = ssh
