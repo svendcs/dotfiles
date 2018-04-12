@@ -7,6 +7,6 @@ general {
 order += "tztime local"
 
 tztime local {
-        format = "%a %d %b %H:%M:%S"
+        format = ": %a %d %b %H:%M:%S"
 }
 
