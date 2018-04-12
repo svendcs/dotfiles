@@ -19,10 +19,7 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 
 call plug#end()
 
-"filetype plugin indent on
 syntax on
-"colorscheme solarized
-"set background=dark
 
 set tabstop=4
 set shiftwidth=4
@@ -52,8 +49,6 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
-" map <silent> j gj
-" map <silent> k gk
 
 map <silent> <leader>n :NERDTreeToggle<CR>
 map <silent> <leader>w :update<CR>
@@ -67,7 +62,6 @@ map <silent> <leader>mw :call MarkWindowSwap()<CR>
 map <silent> <leader>pw :call DoWindowSwap()<CR>
 nmap <CR> o<Esc>
 noremap Y y$
-" nnoremap <silent> <leader>w :ArgWrap<CR>
 
 imap jk <ESC>
 let NERDTreeMapHelp=''
