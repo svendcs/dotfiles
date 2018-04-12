@@ -9,7 +9,9 @@ antigen bundle pip
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme robbyrussell
+antigen bundle $HOME/.zsh/theme svendcs.zsh-theme --no-local-clone
+
+antigen theme svendcs
 antigen apply
 
 for file in $HOME/.zsh/*.zsh; do
