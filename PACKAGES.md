@@ -17,6 +17,7 @@ zathura-ps
 sxiv
 ranger
 chromium
+python-dbus
 
 AUR
 ===
