@@ -47,12 +47,12 @@ bindsym $mod+space focus mode_toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:"
-set $ws6 "6:"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -105,29 +105,13 @@ set_from_resource $fg i3wm.foreground #d8dee8
 set_from_resource $c1 i3wm.color1 #bf616a
 set_from_resource $c4 i3wm.color4 #81a1c1
 
-font pango:FontAwesome, Noto Sans 8
+font pango:Noto Sans 8
 
 bar {
-    status_command i3status
-    position top
-    strip_workspace_numbers yes
-    height 25
-
-    colors {
-        background $bg
-        statusline $fg
-        separator $c1
-        separator $c4
-
-        # class            border  background text
-        focused_workspace  $bg $bg $c4
-        active_workspace   $bg $bg $fg
-        inactive_workspace $bg $bg $fg
-        urgent_workspace   $bg $bg $fg
-        binding_mode       $bg $bg $fg
-    }
+    i3bar_command $HOME/.utility/polybar-custom
 }
 
+exec_always --no-startup-id $HOME/.utility/polybar-custom
 exec_always feh --bg-scale ~/Wallpapers/paris.jpg
 
 # Gaps
