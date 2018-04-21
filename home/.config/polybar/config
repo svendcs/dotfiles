@@ -105,11 +105,10 @@ ws-icon-0 = "1;"
 ws-icon-1 = "2;"
 ; files
 ws-icon-2 = "3;"
-
 ; mail/calendar
-ws-icon-3 = "4;"
+ws-icon-3 = "4;"
 ; chat
-ws-icon-4 = "5;"
+ws-icon-4 = "5;"
 ; music
 ws-icon-5 = "6;"
 
