@@ -15,6 +15,8 @@ zathura
 zathura-pdf-poppler
 zathura-ps
 sxiv
+ranger
+chromium
 
 AUR
 ===
@@ -25,6 +27,7 @@ rxvt-unicode-pixbuf
 paper-icon-theme-git
 ttf-font-awesome-4
 polybar
+spotify
 
 Misc
 ====
