@@ -124,9 +124,9 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground}
-format-underline = #0a6cf5
 
-label = %date% %time%
+label = %date% %time%
+
 
 [module/volume]
 type = internal/volume
