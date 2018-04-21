@@ -20,7 +20,7 @@ AUR
 trizen
 neovim-plug
 antigen-git
-ttf-ms-fonts
 rxvt-unicode-pixbuf
 paper-icon-theme-git
 ttf-font-awesome-4
+polybar
