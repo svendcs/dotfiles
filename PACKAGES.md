@@ -14,6 +14,7 @@ arc-gtk-theme
 zathura
 zathura-pdf-poppler
 zathura-ps
+sxiv
 
 AUR
 ===
@@ -24,3 +25,10 @@ rxvt-unicode-pixbuf
 paper-icon-theme-git
 ttf-font-awesome-4
 polybar
+
+Misc
+====
+Enable sub-pixel rendering and lcdfilter for better looking fonts
+    ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+    ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+
