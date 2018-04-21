@@ -11,6 +11,9 @@ pulseaudio-alsa
 pavucontrol
 pamixer
 arc-gtk-theme
+zathura
+zathura-pdf-poppler
+zathura-ps
 
 AUR
 ===
