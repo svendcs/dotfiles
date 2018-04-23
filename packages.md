@@ -1,5 +1,9 @@
-Arch Repos
-==========
+Arch Packages
+=============
+This file lists the non-trivial packages installed on my Arch Linux system.
+
+Arch Linux Repositories
+-----------------------
 i3-gaps
 nvim
 tmux
@@ -19,8 +23,8 @@ ranger
 chromium
 python-dbus
 
-AUR
-===
+Arch User Repositories
+----------------------
 trizen
 neovim-plug
 antigen-git
@@ -29,10 +33,4 @@ paper-icon-theme-git
 ttf-font-awesome-4
 polybar
 spotify
-
-Misc
-====
-Enable sub-pixel rendering and lcdfilter for better looking fonts
-    ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
-    ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
 
