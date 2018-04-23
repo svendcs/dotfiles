@@ -11,6 +11,7 @@ Arch Linux Repositories
 * rofi
 * dunst
 * noto-fonts
+* noto-fonts-emoji
 * pulseaudio-alsa
 * pavucontrol
 * pamixer
