@@ -12,7 +12,7 @@ pavucontrol
 pamixer
 arc-gtk-theme
 zathura
-zathura-pdf-poppler
+zathura-pdf-mupdf
 zathura-ps
 sxiv
 ranger
