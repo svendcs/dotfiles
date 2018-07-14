@@ -119,7 +119,7 @@ bar {
 }
 
 exec_always --no-startup-id $HOME/.utility/polybar-custom
-exec_always feh --bg-scale ~/Wallpapers/paris.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpapers/solar.jpg
 
 # Gaps
 gaps inner 10
