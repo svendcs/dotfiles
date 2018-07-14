@@ -23,6 +23,7 @@ Arch Linux Repositories
 * ranger
 * chromium
 * python-dbus
+* feh
 
 Arch User Repositories
 ----------------------
