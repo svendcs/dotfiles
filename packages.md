@@ -26,7 +26,7 @@ Arch Linux Repositories
 
 Arch User Repositories
 ----------------------
-* trizen
+* yay
 * neovim-plug
 * antigen-git
 * rxvt-unicode-pixbuf
