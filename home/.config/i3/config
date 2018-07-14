@@ -145,12 +145,12 @@ exec_always feh --bg-scale ~/Pictures/Wallpapers/solar.jpg
 exec_always --no-startup-id dunst
 
 # Gaps
-gaps inner 10
+gaps inner 20
 gaps outer 0
 # smart_gaps off
 default_floating_border normal
 default_border pixel 1
-hide_edge_borders smart
+# hide_edge_borders no
 
 
 # class                 border  backgr. text indicator child_border
