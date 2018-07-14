@@ -12,6 +12,7 @@ Arch Linux Repositories
 * dunst
 * noto-fonts
 * noto-fonts-emoji
+* pulseaudio
 * pulseaudio-alsa
 * pavucontrol
 * pamixer
@@ -24,6 +25,7 @@ Arch Linux Repositories
 * chromium
 * python-dbus
 * feh
+* playerctl
 
 Arch User Repositories
 ----------------------

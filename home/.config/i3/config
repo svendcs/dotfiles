@@ -55,6 +55,19 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 
+# Define variables for monitors
+set $m1 "HDMI1"
+set $m2 "HDMI2"
+
+# Bind workspaces to monitors
+workspace $ws1 output $m1
+workspace $ws2 output $m2
+workspace $ws3 output $m2
+workspace $ws4 output $m1
+workspace $ws5 output $m1
+workspace $ws6 output $m2
+workspace $ws7 output $m2
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -72,6 +85,14 @@ bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
+
+# Volume and music player controls
+bindsym $mod+F12 exec "pamixer -i 10"
+bindsym $mod+F11 exec "pamixer -d 10"
+
+bindsym $mod+F7 exec "playerctl previous"
+bindsym $mod+F8 exec "playerctl play-pause"
+bindsym $mod+F9 exec "playerctl next"
 
 # assign applications to workspaces
 # assign [class="^Spotify$"] $ws7
@@ -118,6 +139,7 @@ bar {
     i3bar_command $HOME/.utility/polybar-custom
 }
 
+exec_always xrandr --output HDMI2 --auto --right-of HDMI1
 exec_always --no-startup-id $HOME/.utility/polybar-custom
 exec_always feh --bg-scale ~/Pictures/Wallpapers/solar.jpg
 
