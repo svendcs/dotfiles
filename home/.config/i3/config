@@ -142,6 +142,7 @@ bar {
 exec_always xrandr --output HDMI2 --auto --right-of HDMI1
 exec_always --no-startup-id $HOME/.utility/polybar-custom
 exec_always feh --bg-scale ~/Pictures/Wallpapers/solar.jpg
+exec_always --no-startup-id dunst
 
 # Gaps
 gaps inner 10
