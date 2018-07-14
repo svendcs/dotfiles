@@ -26,6 +26,7 @@ Arch Linux Repositories
 * python-dbus
 * feh
 * playerctl
+* compton
 
 Arch User Repositories
 ----------------------
