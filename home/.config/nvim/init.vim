@@ -6,6 +6,8 @@ set rtp+=~/.vim/bundle/neobundle.vim
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'arcticicestudio/nord-vim'
+
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 Plug 'tpope/vim-commentary'
@@ -20,6 +22,7 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 call plug#end()
 
 syntax on
+colorscheme nord
 
 set tabstop=4
 set shiftwidth=4
