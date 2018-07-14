@@ -124,7 +124,7 @@ exec_always feh --bg-scale ~/Pictures/Wallpapers/solar.jpg
 # Gaps
 gaps inner 10
 gaps outer 0
-smart_gaps on
+# smart_gaps off
 default_floating_border normal
 default_border pixel 1
 hide_edge_borders smart
