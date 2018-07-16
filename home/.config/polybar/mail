@@ -1,0 +1,49 @@
+#!/bin/python
+
+import subprocess
+import re
+import imaplib
+import subprocess
+
+def fetch_inbox(server, user, password):
+    conn = imaplib.IMAP4_SSL(server)
+
+    try:
+        (retcode, capabilities) = conn.login(user, password)
+    except:
+        print(sys.exc_info()[1])
+        sys.exit(1)
+
+    conn.select(readonly=1) # Select inbox or default namespace
+    (retcode, messages) = conn.search(None, '(UNSEEN)')
+    if retcode == 'OK':
+        nums = messages[0].split()
+        return len(nums)
+    else:
+        sys.exit(1)
+
+def get_pass(path):
+    process = subprocess.Popen(['pass', path], stdout=subprocess.PIPE)
+    output, error = process.communicate()
+    info = [x.decode() for x in output.split(b'\n')]
+    return (info[1].split()[1], info[0])
+
+(google_user, google_password) = get_pass('Internet/google.com')
+(au_user, au_password) = get_pass('Internet/au.dk')
+
+google_count = fetch_inbox('imap.gmail.com', google_user, google_password)
+au_employee_count = fetch_inbox('imaps.au.dk', au_user, au_password)
+au_student_count = fetch_inbox('post.au.dk', au_user, au_password)
+
+if google_count + au_employee_count + au_student_count > 0:
+    # print('%{u#BF616A +u} ', end='')
+    print(' ', end='')
+    if google_count > 0:
+        print('{} unread google mail'.format(google_count))
+    if au_employee_count > 0:
+        print('{} unread employee mail'.format(au_employee_count))
+    if au_student_count > 0:
+        print('{} unread student mail'.format(au_student_count))
+else:
+    print('')
+

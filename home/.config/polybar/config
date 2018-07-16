@@ -42,7 +42,7 @@ font-1 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = spotify
-modules-right = dropbox volume date
+modules-right = mail dropbox volume date
 
 tray-position = right
 tray-padding = 2
@@ -149,6 +149,11 @@ type = custom/script
 interval = 1
 format-prefix = "  "
 exec = ~/.config/polybar/spotify
+
+[module/mail]
+type = custom/script
+interval = 300
+exec = ~/.config/polybar/mail
 
 [module/dropbox]
 type = custom/script
