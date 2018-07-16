@@ -157,7 +157,7 @@ exec = ~/.config/polybar/mail
 
 [module/dropbox]
 type = custom/script
-interval = 5
+interval = 1
 exec = ~/.config/polybar/dropbox
 
 [settings]
