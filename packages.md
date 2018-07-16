@@ -30,6 +30,8 @@ Arch Linux Repositories
 * wget
 * gdb
 * ninja
+* imagemagick
+* scrot
 
 Arch User Repositories
 ----------------------
