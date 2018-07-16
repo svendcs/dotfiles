@@ -27,6 +27,9 @@ Arch Linux Repositories
 * feh
 * playerctl
 * compton
+* wget
+* gdb
+* ninja
 
 Arch User Repositories
 ----------------------
@@ -38,4 +41,6 @@ Arch User Repositories
 * ttf-font-awesome-4
 * polybar
 * spotify
+* dropbox
+* dropbox-cli
 

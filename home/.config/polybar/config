@@ -42,7 +42,7 @@ font-1 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = spotify
-modules-right = volume date
+modules-right = dropbox volume date
 
 tray-position = right
 tray-padding = 2
@@ -133,10 +133,10 @@ label = %date% %time%
 
 [module/volume]
 type = internal/volume
-format-volume = <ramp-volume>  <label-volume>
+format-volume = <ramp-volume><label-volume>
 /* format-volume-foreground = ${colors.color4} */
 
-label-muted = "  muted"
+label-muted = "muted"
 /* label-muted-foreground = ${colors.color4} */
 
 ; Only applies if <ramp-volume> is used
@@ -152,6 +152,11 @@ format-prefix = "  "
 
 format = <label>
 exec = ~/.config/polybar/spotify
+
+[module/dropbox]
+type = custom/script
+interval = 5
+exec = ~/.config/polybar/dropbox
 
 [settings]
 screenchange-reload = true
