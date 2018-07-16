@@ -9,13 +9,16 @@ alias gita='git add'
 
 # tmux
 alias tmn='tmux new-session -s'
+alias tmn-pwd='tmux new-session -s $(basename $(pwd))'
 alias tml='tmux list-sessions'
 alias tmk='tmux kill-session -t'
 alias tma='tmux attach-session -d -t'
 
+
 # c++ dev
 alias ctest='ctest -j6'
 alias make='make -j6'
+alias ninja='ninja -j6'
 alias cmake='cmake -GNinja -DCMAKE_BUILD_TYPE="RelWithDebInfo"'
 
 # clipboard
