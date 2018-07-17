@@ -39,11 +39,11 @@ if google_count + au_employee_count + au_student_count > 0:
     # print('%{u#BF616A +u} ', end='')
     print(' ', end='')
     if google_count > 0:
-        print('{} unread google mail'.format(google_count))
-    if au_employee_count > 0:
-        print('{} unread employee mail'.format(au_employee_count))
-    if au_student_count > 0:
-        print('{} unread student mail'.format(au_student_count))
+        print('unread google mail'.format(google_count))
+    elif au_employee_count > 0:
+        print('unread employee mail'.format(au_employee_count))
+    elif au_student_count > 0:
+        print('unread student mail'.format(au_student_count))
 else:
     print('')
 
