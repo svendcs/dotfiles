@@ -15,6 +15,10 @@ bindsym $mod+space exec rofi-custom
 # lock screen
 bindsym $mod+d exec lock
 
+# screenshot
+bindsym --release Print exec screenshot
+bindsym --release Shift+Print exec screenshot --active_window
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
