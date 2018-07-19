@@ -32,6 +32,9 @@ Arch Linux Repositories
 * ninja
 * imagemagick
 * scrot
+* i3lock
+* biber
+* texlive-most
 
 Arch User Repositories
 ----------------------
