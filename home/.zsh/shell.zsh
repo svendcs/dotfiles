@@ -3,6 +3,10 @@
 # Set option for extended globbing features
 setopt extended_glob
 
+# Setup ZSH vim mode
+bindkey -v
+export KEYTIMEOUT=1
+
 # Vim as default editor
 export EDITOR=nvim
 
