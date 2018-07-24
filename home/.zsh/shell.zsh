@@ -5,7 +5,7 @@ setopt extended_glob
 
 # Setup ZSH vim mode
 bindkey -v
-export KEYTIMEOUT=1
+export KEYTIMEOUT=20
 
 # Use vim cli mode
 bindkey '^P' up-line-or-search
@@ -17,6 +17,9 @@ bindkey '^h' backward-delete-char
 
 # ctrl-r starts searching history backward
 bindkey '^r' history-incremental-search-backward
+
+# bind jk to escape
+bindkey jk vi-cmd-mode
 
 # Vim as default editor
 export EDITOR=nvim
