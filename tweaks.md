@@ -10,10 +10,3 @@ sudo ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 sudo ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
 ```
 
-Compose Key
------------
-Set Caps Lock as the compose key in order to type special letters.
-```
-setxkbmap us -option compose:caps
-```
-
