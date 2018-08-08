@@ -35,6 +35,7 @@ Arch Linux Repositories
 * i3lock
 * biber
 * texlive-most
+* the_silver_searcher
 
 Arch User Repositories
 ----------------------
