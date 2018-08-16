@@ -36,6 +36,8 @@ Arch Linux Repositories
 * biber
 * texlive-most
 * the_silver_searcher
+* cups
+* samba
 
 Arch User Repositories
 ----------------------
