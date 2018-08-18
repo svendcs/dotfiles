@@ -31,3 +31,9 @@ alias q='exit'
 alias vim='nvim'
 alias ack="ack --pager=\"$PAGER\""
 
+function swap() {
+    TMPFILE="$1.tmp"
+    mv $1 $TMPFILE
+    mv $2 $1
+    mv $TMPFILE $2
+}
