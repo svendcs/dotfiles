@@ -1,5 +1,7 @@
 #!/bin/zsh
-#
+
+CORES=4
+
 # git aliases
 alias gitc='git commit'
 alias gitl='git log'
@@ -16,9 +18,9 @@ alias tma='tmux attach-session -d -t'
 
 
 # c++ dev
-alias ctest='ctest -j6'
-alias make='make -j6'
-alias ninja='ninja -j6'
+alias ctest="ctest -j$CORES"
+alias make="make -j$CORES"
+alias ninja="ninja -j$CORES"
 alias cmake='cmake -GNinja -DCMAKE_BUILD_TYPE="RelWithDebInfo"'
 
 # clipboard
