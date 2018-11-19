@@ -43,7 +43,7 @@ font-1 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = spotify
-modules-right = mail dropbox volume date
+modules-right = mail dropbox alsa date
 
 tray-position = right
 tray-padding = 2
@@ -116,8 +116,8 @@ format-prefix = "  "
 
 label = %date% %time%
 
-[module/volume]
-type = internal/volume
+[module/alsa]
+type = internal/alsa
 format-volume = <ramp-volume><label-volume>
 
 label-muted = "muted"
