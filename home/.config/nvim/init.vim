@@ -84,4 +84,5 @@ autocmd FileType vim setlocal commentstring=\"\ %s
 autocmd FileType zsh setlocal commentstring=#\ %s
 autocmd FileType cmake setlocal commentstring=#\ %s
 autocmd FileType gnuplot setlocal commentstring=#\ %s
+autocmd FileType meson setlocal commentstring=#\ %s
 
