@@ -95,14 +95,16 @@ ws-icon-0 = "1;"
 ws-icon-1 = "2;"
 ; browser
 ws-icon-2 = "3;"
+; documentation
+ws-icon-3 = "4;"
 ; files
-ws-icon-3 = "4;"
+ws-icon-4 = "5;"
 ; mail/calendar
-ws-icon-4 = "5;"
+ws-icon-5 = "6;"
 ; chat
-ws-icon-5 = "6;"
+ws-icon-6 = "7;"
 ; music
-ws-icon-6 = "7;"
+ws-icon-7 = "8;"
 
 
 [module/date]
