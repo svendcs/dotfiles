@@ -1,0 +1,12 @@
+set searchurls.dd https://duckduckgo.com/?q=
+set searchurls.ew https://en.wikipedia.org/wiki/Special:Search/
+set searchurls.dw https://da.wikipedia.org/wiki/Special:Search/
+set searchurls.yt https://www.youtube.com/results?search_query=
+set searchurls.ge https://genius.com/search?q=
+set searchurls.wa https://www.wolframalpha.com/input/?i=
+set searchurls.aw https://wiki.archlinux.org/index.php?go=Go&title=Special:Search&search=
+set searchurls.ap https://www.archlinux.org/packages/?q=
+set searchurls.au https://aur.archlinux.org/packages/?O=0&SeB=n&K=%s&outdated=&SB=n&SO=a&PP=50&do_Search=Go
+set searchurls.rt https://www.rottentomatoes.com/search/?search=
+set searchurls.gr https://www.goodreads.com/search?q=
+set searchurls.im https://www.imdb.com/find?ref_=nv_sr_fn&q=%s&s=all
