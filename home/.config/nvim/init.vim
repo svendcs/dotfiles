@@ -46,6 +46,7 @@ set conceallevel=0
 let g:vim_json_syntax_conceal=0
 
 au BufRead,BufNewFile *.gnuplot setfiletype gnuplot
+au BufRead,BufNewFile *.vue setfiletype html
 
 " Moving
 map <C-J> <C-W>j
