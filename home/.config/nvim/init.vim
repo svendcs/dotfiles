@@ -56,7 +56,7 @@ map <C-H> <C-W>h
 
 map <silent> <leader>n :NERDTreeToggle<CR>
 map <silent> <leader>w :update<CR>
-map <silent> <leader>s :source ~/.config/nvim/init.vim<CR>
+map <silent> <leader>s :'<,'>sort<CR>
 map <silent> <leader>q :q<CR>
 map <silent> <leader>gd :Gdiff<CR>
 map <silent> <leader>gb :Gblame<CR>
