@@ -18,6 +18,8 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -54,6 +56,8 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
+nnoremap <silent> <leader>p :FZF<CR>
+nnoremap <silent> \ :Ag<space>
 map <silent> <leader>n :NERDTreeToggle<CR>
 map <silent> <leader>w :update<CR>
 map <silent> <leader>s :'<,'>sort<CR>
@@ -86,4 +90,10 @@ autocmd FileType zsh setlocal commentstring=#\ %s
 autocmd FileType cmake setlocal commentstring=#\ %s
 autocmd FileType gnuplot setlocal commentstring=#\ %s
 autocmd FileType meson setlocal commentstring=#\ %s
+
+" FZF keybindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
