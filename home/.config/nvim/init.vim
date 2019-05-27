@@ -46,6 +46,8 @@ set incsearch
 set nohlsearch
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
+set wildmode=longest,list,full
+set wildmenu
 
 au BufRead,BufNewFile *.gnuplot setfiletype gnuplot
 au BufRead,BufNewFile *.vue setfiletype html
