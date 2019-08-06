@@ -17,3 +17,5 @@ antigen apply
 for file in $HOME/.zsh/*.zsh; do
   source $file
 done
+
+source /usr/share/doc/pkgfile/command-not-found.zsh
