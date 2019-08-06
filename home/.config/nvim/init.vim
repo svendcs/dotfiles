@@ -68,8 +68,6 @@ map <silent> <leader>gd :Gdiff<CR>
 map <silent> <leader>gb :Gblame<CR>
 map <silent> <leader>+ :exe "resize" . (winheight(0) * 3/2)<CR>
 map <silent> <leader>- :exe "resize" . (winheight(0) * 2/3)<CR>
-map <silent> <leader>mw :call MarkWindowSwap()<CR>
-map <silent> <leader>pw :call DoWindowSwap()<CR>
 nmap <CR> o<Esc>
 noremap Y y$
 
