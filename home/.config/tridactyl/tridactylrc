@@ -10,3 +10,4 @@ set searchurls.au https://aur.archlinux.org/packages/?O=0&SeB=n&K=%s&outdated=&S
 set searchurls.rt https://www.rottentomatoes.com/search/?search=
 set searchurls.gr https://www.goodreads.com/search?q=
 set searchurls.im https://www.imdb.com/find?ref_=nv_sr_fn&q=%s&s=all
+set searchurls.ud https://www.urbandictionary.com/define.php?term=
