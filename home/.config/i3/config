@@ -58,6 +58,7 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
+set $ws9 "9"
 
 # Define variables for monitors
 set $m1 "HDMI1"
@@ -72,6 +73,7 @@ workspace $ws5 output $m1
 workspace $ws6 output $m1
 workspace $ws7 output $m2
 workspace $ws8 output $m2
+workspace $ws9 output $m2
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -82,6 +84,7 @@ bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -92,6 +95,7 @@ bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
 
 # Volume and music player controls
 bindsym $mod+F12 exec "pamixer -i 10"
@@ -103,9 +107,11 @@ bindsym $mod+F9 exec "playerctl next"
 
 # assign applications to workspaces
 # assign [class="^Spotify$"] $ws7
-for_window [class="Spotify"] move to workspace $ws8
-for_window [title="JudoAssistant"] move to workspace $ws2
-for_window [title="JudoAssistant Score"] move to workspace $ws2
+for_window [class="^Spotify$"] move to workspace $ws8
+for_window [class="^JudoAssistant$"] move to workspace $ws2
+for_window [class="^JudoAssistant Score$"] move to workspace $ws2
+for_window [class="^JudoAssistant Kiosk"] move to workspace $ws2
+for_window [class="^Bitwarden$"] move to workspace $ws9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

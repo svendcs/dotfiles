@@ -105,6 +105,8 @@ ws-icon-5 = "6;"
 ws-icon-6 = "7;"
 ; music
 ws-icon-7 = "8;"
+; passwords
+ws-icon-8 = "9;"
 
 
 [module/date]
