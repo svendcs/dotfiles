@@ -43,7 +43,7 @@ font-1 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = spotify
-modules-right = mail dropbox alsa date
+modules-right = dropbox alsa date
 
 tray-position = right
 tray-padding = 2

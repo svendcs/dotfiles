@@ -32,7 +32,8 @@ def get_pass(path):
 (au_user, au_password) = get_pass('Internet/au.dk')
 
 google_count = fetch_inbox('imap.gmail.com', google_user, google_password)
-au_employee_count = fetch_inbox('imaps.au.dk', au_user, au_password)
+# au_employee_count = fetch_inbox('imaps.au.dk', au_user, au_password)
+au_employee_count = 0
 au_student_count = fetch_inbox('post.au.dk', au_user, au_password)
 
 if google_count + au_employee_count + au_student_count > 0:
