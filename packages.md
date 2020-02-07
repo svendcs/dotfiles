@@ -4,40 +4,43 @@ This file lists the non-trivial packages installed on my Arch Linux system.
 
 Arch Linux Repositories
 -----------------------
-* i3-gaps
-* nvim
-* tmux
-* zsh
-* rofi
+* arc-gtk-theme
+* biber
+* chromium
+* compton
+* cups
 * dunst
+* feh
+* firefox
+* gdb
+* i3-gaps
+* i3lock
+* imagemagick
+* ninja
 * noto-fonts
 * noto-fonts-emoji
+* nvim
+* pamixer
+* pavucontrol
+* playerctl
 * pulseaudio
 * pulseaudio-alsa
-* pavucontrol
-* pamixer
-* arc-gtk-theme
+* python-dbus
+* ranger
+* rofi
+* samba
+* scrot
+* sxiv
+* syncthing
+* texlive-most
+* the_silver_searcher
+* tmux
+* ufw
+* wget
 * zathura
 * zathura-pdf-mupdf
 * zathura-ps
-* sxiv
-* ranger
-* chromium
-* python-dbus
-* feh
-* playerctl
-* compton
-* wget
-* gdb
-* ninja
-* imagemagick
-* scrot
-* i3lock
-* biber
-* texlive-most
-* the_silver_searcher
-* cups
-* samba
+* zsh
 
 Arch User Repositories
 ----------------------
@@ -49,6 +52,4 @@ Arch User Repositories
 * ttf-font-awesome-4
 * polybar
 * spotify
-* dropbox
-* dropbox-cli
 

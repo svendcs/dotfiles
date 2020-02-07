@@ -43,7 +43,7 @@ font-1 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = spotify
-modules-right = dropbox alsa date
+modules-right = alsa date
 
 tray-position = right
 tray-padding = 2
@@ -142,10 +142,10 @@ type = custom/script
 interval = 300
 exec = ~/.config/polybar/mail
 
-[module/dropbox]
-type = custom/script
-interval = 1
-exec = ~/.config/polybar/dropbox
+; [module/dropbox]
+; type = custom/script
+; interval = 1
+; exec = ~/.config/polybar/dropbox
 
 [settings]
 screenchange-reload = true
