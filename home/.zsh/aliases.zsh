@@ -24,8 +24,8 @@ alias ninja="ninja -j$CORES"
 alias cmake='cmake -GNinja -DCMAKE_BUILD_TYPE="RelWithDebInfo"'
 
 # clipboard
-alias cbput='xclip -selection c'
-alias cbfetch='xclip -selection c -o'
+alias cbput='pbcopy'
+alias cbfetch='pbpaste'
 
 # misc
 alias c='clear'

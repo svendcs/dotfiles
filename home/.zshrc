@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-source /usr/share/zsh/share/antigen.zsh
+source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -18,4 +18,3 @@ for file in $HOME/.zsh/*.zsh; do
   source $file
 done
 
-source /usr/share/doc/pkgfile/command-not-found.zsh
