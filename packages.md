@@ -37,6 +37,7 @@ Arch Linux Repositories
 * tmux
 * ufw
 * wget
+* yarn
 * zathura
 * zathura-pdf-mupdf
 * zathura-ps
@@ -44,12 +45,13 @@ Arch Linux Repositories
 
 Arch User Repositories
 ----------------------
-* yay
-* neovim-plug
 * antigen-git
-* rxvt-unicode-pixbuf
+* bitwarden
+* neovim-plug
 * paper-icon-theme-git
-* ttf-font-awesome-4
 * polybar
+* rxvt-unicode-pixbuf
 * spotify
+* ttf-font-awesome-4
+* yay
 
