@@ -6,7 +6,6 @@ Arch Linux Repositories
 -----------------------
 * arc-gtk-theme
 * biber
-* chromium
 * compton
 * cups
 * dunst
@@ -42,6 +41,10 @@ Arch Linux Repositories
 * zathura-pdf-mupdf
 * zathura-ps
 * zsh
+* fzf
+* tree
+* htop
+* xclip
 
 Arch User Repositories
 ----------------------
