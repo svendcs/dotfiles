@@ -11,7 +11,9 @@ Arch Linux Repositories
 * dunst
 * feh
 * firefox
+* fzf
 * gdb
+* htop
 * i3-gaps
 * i3lock
 * imagemagick
@@ -34,17 +36,15 @@ Arch Linux Repositories
 * texlive-most
 * the_silver_searcher
 * tmux
+* tree
 * ufw
 * wget
+* xclip
 * yarn
 * zathura
 * zathura-pdf-mupdf
 * zathura-ps
 * zsh
-* fzf
-* tree
-* htop
-* xclip
 
 Arch User Repositories
 ----------------------
