@@ -10,7 +10,7 @@ bindsym $mod+t exec urxvt
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec rofi-custom
+bindsym $mod+space exec $HOME/.utility/rofi-custom
 
 # lock screen
 bindsym $mod+d exec lock

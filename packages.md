@@ -48,6 +48,9 @@ Arch Linux Repositories
 * zathura-pdf-mupdf
 * zathura-ps
 * zsh
+* lightdm
+* lightdm-pantheon-greeter
+* redshift
 
 Arch User Repositories
 ----------------------
