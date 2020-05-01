@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cp system-config/logid.cfg /etc/logid.cfg
+chown root:root /etc/logid.cfg
+
+cp system-config/keyboard /etc/default/keyboard
+chown root:root /etc/default/keyboard
