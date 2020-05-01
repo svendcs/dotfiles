@@ -13,7 +13,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec $HOME/.utility/rofi-custom
 
 # lock screen
-bindsym $mod+d exec lock
+bindsym $mod+d exec dm-tool lock
 
 # screenshot
 bindsym --release Print exec screenshot
