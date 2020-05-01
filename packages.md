@@ -6,6 +6,8 @@ Arch Linux Repositories
 -----------------------
 * arc-gtk-theme
 * biber
+* bluez
+* bluez-utils
 * compton
 * cups
 * dunst
@@ -17,6 +19,7 @@ Arch Linux Repositories
 * i3-gaps
 * i3lock
 * imagemagick
+* networkmanager
 * ninja
 * noto-fonts
 * noto-fonts-emoji
@@ -57,4 +60,5 @@ Arch User Repositories
 * spotify
 * ttf-font-awesome-4
 * yay
+* logiops-git
 
