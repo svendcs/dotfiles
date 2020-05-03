@@ -1,7 +1,8 @@
 #!/bin/bash
 
+cp system-config/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
+chown root:root /etc/X11/xorg.conf.d/00-keyboard.conf
+
 cp system-config/logid.cfg /etc/logid.cfg
 chown root:root /etc/logid.cfg
 
-cp system-config/keyboard /etc/default/keyboard
-chown root:root /etc/default/keyboard
