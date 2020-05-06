@@ -1,7 +1,3 @@
 #include ".xrdb/nord"
 #include ".xrdb/rofi"
 
-URxvt.saveLines:3000
-URxvt.scrollBar: false
-URxvt.font: xft:Noto Sans Mono:size=9
-URxvt.internalBorder: 10

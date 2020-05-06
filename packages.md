@@ -51,6 +51,7 @@ Arch Linux Repositories
 * lightdm
 * lightdm-pantheon-greeter
 * redshift
+* alacritty
 
 Arch User Repositories
 ----------------------
@@ -59,7 +60,6 @@ Arch User Repositories
 * neovim-plug
 * paper-icon-theme-git
 * polybar
-* rxvt-unicode-pixbuf
 * spotify
 * ttf-font-awesome-4
 * yay

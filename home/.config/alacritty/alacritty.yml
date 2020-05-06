@@ -1,0 +1,69 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+#env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  #TERM: alacritty
+
+window:
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 10
+    y: 10
+
+# Font configuration (changes require restart)
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: Noto Sans Mono
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: Noto Sans Mono
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: Noto Sans Mono
+    style: Italic
+  size: 9
+
+# Colors (Nord)
+colors:
+   # Default colors
+   primary:
+     background: '#2E3440'
+     foreground: '#D8DEE9'
+
+   # Normal colors
+   normal:
+     black:   '#3B4252'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#88C0D0'
+     white:   '#E5E9F0'
+
+   # Bright colors
+   bright:
+     black:   '#4C566A'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#8FBCBB'
+     white:   '#ECEFF4'
