@@ -8,7 +8,7 @@ Arch Linux Repositories
 * biber
 * bluez
 * bluez-utils
-* compton
+* picom
 * cups
 * dunst
 * feh
