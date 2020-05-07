@@ -61,8 +61,8 @@ set $ws8 "8"
 set $ws9 "9"
 
 # Define variables for monitors
-set $m1 "HDMI1"
-set $m2 "HDMI2"
+set $m1 "DisplayPort-1"
+set $m2 "DisplayPort-2"
 
 # Bind workspaces to monitors
 workspace $ws1 output $m1
@@ -154,7 +154,7 @@ bar {
     i3bar_command $HOME/.utility/polybar-custom
 }
 
-exec_always --no-startup-id xrandr --output HDMI2 --auto --right-of HDMI1
+exec_always --no-startup-id xrandr --output $m2 --auto --right-of $m1
 # exec_always --no-startup-id $HOME/.utility/polybar-custom
 exec_always --no-startup-id feh --bg-scale ~/pictures/wallpapers/ryan-schroeder.jpg
 exec_always --no-startup-id dunst
