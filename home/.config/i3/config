@@ -61,8 +61,8 @@ set $ws8 "8"
 set $ws9 "9"
 
 # Define variables for monitors
-set $m1 "DP-2"
-set $m2 "DP-3"
+set $m1 "HDMI1"
+set $m2 "HDMI2"
 
 # Bind workspaces to monitors
 workspace $ws1 output $m1
@@ -98,12 +98,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 
 # Volume and music player controls
-bindsym XF86AudioRaiseVolume exec "pamixer -i 10"
-bindsym XF86AudioLowerVolume exec "pamixer -d 10"
+bindsym $mod+F12 exec "pamixer -i 10"
+bindsym $mod+F11 exec "pamixer -d 10"
 
-bindsym XF86AudioPrev exec "playerctl previous"
-bindsym XF86AudioPlay exec "playerctl play-pause"
-bindsym XF86AudioNext exec "playerctl next"
+bindsym $mod+F7 exec "playerctl previous"
+bindsym $mod+F8 exec "playerctl play-pause"
+bindsym $mod+F9 exec "playerctl next"
 
 # assign applications to workspaces
 # assign [class="^Spotify$"] $ws7
