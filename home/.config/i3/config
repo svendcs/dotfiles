@@ -98,12 +98,17 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 
 # Volume and music player controls
-bindsym $mod+F12 exec "pamixer -i 10"
-bindsym $mod+F11 exec "pamixer -d 10"
+# bindsym $mod+F12 exec "pamixer -i 10"
+bindsym $mod+bracketright exec "pamixer -i 10"
+# bindsym $mod+F11 exec "pamixer -d 10"
+bindsym $mod+bracketleft exec "pamixer -d 10"
 
-bindsym $mod+F7 exec "playerctl previous"
-bindsym $mod+F8 exec "playerctl play-pause"
-bindsym $mod+F9 exec "playerctl next"
+# bindsym $mod+F7 exec "playerctl previous"
+bindsym $mod+u exec "playerctl previous"
+# bindsym $mod+F8 exec "playerctl play-pause"
+bindsym $mod+i exec "playerctl play-pause"
+# bindsym $mod+F9 exec "playerctl next"
+bindsym $mod+o exec "playerctl next"
 
 # assign applications to workspaces
 # assign [class="^Spotify$"] $ws7
