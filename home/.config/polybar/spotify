@@ -4,7 +4,7 @@
 
 import dbus
 
-def truncate(title, trunclen = 25):
+def truncate(title, trunclen = 50):
     if len(title) > trunclen:
         title = title[0:trunclen] + '...'
         if ('(' in title) and (')' not in title):
@@ -24,7 +24,10 @@ try:
     title = truncate(metadata['xesam:title'])
 
     if is_playing:
-        print("{} - {}".format(artist, title))
+        if not artist:
+            print(title)
+        else:
+            print("{} - {}".format(artist, title))
     else:
         print("")
 except:
