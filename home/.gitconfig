@@ -22,3 +22,5 @@
 	default = simple
 [alias]
     graph = log --graph --oneline --all
+[log]
+	date = local
