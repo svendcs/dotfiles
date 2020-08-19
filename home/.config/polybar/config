@@ -121,7 +121,7 @@ format-prefix = "  "
 label = %date% %time%
 
 [module/alsa]
-type = internal/alsa
+type = internal/pulseaudio
 format-volume = <ramp-volume><label-volume>
 
 label-muted = "muted"
