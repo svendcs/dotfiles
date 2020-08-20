@@ -52,6 +52,7 @@ Arch Linux Repositories
 * lightdm-pantheon-greeter
 * redshift
 * alacritty
+* gnome-keyring
 
 Arch User Repositories
 ----------------------
