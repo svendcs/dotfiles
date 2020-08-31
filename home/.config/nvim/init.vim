@@ -7,19 +7,17 @@ set rtp+=~/.vim/bundle/neobundle.vim
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'arcticicestudio/nord-vim'
-
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
 Plug 'bronson/vim-trailing-whitespace'
-
-Plug 'tpope/vim-markdown', { 'for': 'markdown' }
-Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'editorconfig/editorconfig-vim'
+Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'junegunn/fzf.vim'
+Plug 'lervag/vimtex', { 'for': 'tex' }
+Plug 'rhysd/vim-grammarous'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
