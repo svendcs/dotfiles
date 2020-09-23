@@ -23,6 +23,8 @@ Arch Linux Repositories
 * ninja
 * noto-fonts
 * noto-fonts-emoji
+* noto-fonts-cjk
+* noto-fonts-extra
 * nvim
 * pamixer
 * pavucontrol
