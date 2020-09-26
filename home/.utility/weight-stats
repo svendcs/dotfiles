@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+
+from datetime import date, timedelta
+from sklearn.linear_model import LinearRegression
+import keyring
+import matplotlib.pyplot as plt
+import numpy as np
+import requests
+
+# Fetch bearer token
+bearer_token = keyring.get_password("system", "bearer_token")
+
+if bearer_token is None:
+    print("Please enter bearer token: ")
+    bearer_token = input()
+    keyring.set_password("system", "bearer_token", bearer_token)
+
+# Fetch data from Airtable
+headers = {"Authorization": "Bearer {}".format(bearer_token)}
+r = requests.get('https://api.airtable.com/v0/appFzscBn1kOixZQ4/tbl8IPCD3f5f956w1?maxRecords=100&sort%5B0%5D%5Bfield%5D=Date&sort%5B0%5D%5Bdirection%5D=desc', headers=headers)
+
+# Map data to arrays
+first_date = None
+
+dates = []
+date_diffs = []
+weights = []
+
+for record in r.json()['records']:
+    date = date.fromisoformat(record['fields']['Date'])
+    weight = record['fields']['Weight']
+
+    if first_date is None:
+        first_date = date
+
+    if first_date - date > timedelta(days=60):
+        continue
+
+    dates.append(date)
+    weights.append(weight)
+    date_diffs.append((date - first_date).days)
+
+# Perform linear regression
+date_diffs = np.array(date_diffs).reshape(-1,1)
+reg = LinearRegression().fit(date_diffs, np.array(weights))
+weight_pred = reg.predict(date_diffs)
+
+print("Approximate monthly weight gain: {}".format(reg.coef_[0]*30))
+
+# Plot Data
+plt.title('Morning Weight')
+plt.xlabel('Date')
+plt.ylabel('Weight / kg')
+plt.grid()
+
+plt.plot(dates, weight_pred)
+plt.scatter(dates, weights)
+
+plt.show()
+
