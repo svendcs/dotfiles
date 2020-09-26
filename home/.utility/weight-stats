@@ -40,12 +40,25 @@ for record in r.json()['records']:
     weights.append(weight)
     date_diffs.append((date - first_date).days)
 
-# Perform linear regression
+# Perform linear regression on original data
+dates = np.array(dates)
 date_diffs = np.array(date_diffs).reshape(-1,1)
-reg = LinearRegression().fit(date_diffs, np.array(weights))
+weights = np.array(weights)
+
+reg = LinearRegression().fit(date_diffs, weights)
 weight_pred = reg.predict(date_diffs)
 
-print("Approximate monthly weight gain: {}".format(reg.coef_[0]*30))
+# Perform linear regression with outliers removed
+distances = np.abs(weight_pred - weights)
+mean_distance = np.mean(distances)
+outlier_mask = distances < mean_distance * 2
+
+filtered_reg = LinearRegression().fit(date_diffs[outlier_mask], weights[outlier_mask])
+filtered_weight_pred = filtered_reg.predict(date_diffs)
+
+# Show results
+print("Approximate weight gain: {} kg/month".format(reg.coef_[0]*30))
+print("Approximate weight gain (with outliers removed): {} kg/month".format(filtered_reg.coef_[0]*30))
 
 # Plot Data
 plt.title('Morning Weight')
@@ -53,8 +66,9 @@ plt.xlabel('Date')
 plt.ylabel('Weight / kg')
 plt.grid()
 
-plt.plot(dates, weight_pred)
-plt.scatter(dates, weights)
+plt.plot(dates, filtered_weight_pred)
+plt.scatter(dates[outlier_mask], weights[outlier_mask])
+plt.scatter(dates[~outlier_mask], weights[~outlier_mask])
 
 plt.show()
 
