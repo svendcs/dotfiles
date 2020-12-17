@@ -156,7 +156,7 @@ bar {
 
 exec_always --no-startup-id xrandr --output $m2 --auto --right-of $m1
 # exec_always --no-startup-id $HOME/.utility/polybar-custom
-exec_always --no-startup-id feh --bg-scale ~/pictures/wallpapers/catalina.jpg
+exec_always --no-startup-id feh --bg-scale ~/pictures/wallpapers/lake-view.jpg
 exec_always --no-startup-id dunst
 exec_always --no-startup-id picom -b
 
