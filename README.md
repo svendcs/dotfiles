@@ -14,13 +14,13 @@ Everything is optimized for a dual-monitor desktop setup.
     <th>Colors</th>
   </tr>
   <tr>
-    <td>[Arch Linux](https://www.archlinux.org/)</td>
-    <td>[i3 wm](https://i3wm.org/) with [polybar](https://github.com/polybar/polybar)</td>
-    <td>[Alacritty](https://github.com/alacritty/alacritty)</td>
-    <td>[Zsh](https://wiki.archlinux.org/index.php/Zsh)</td>
-    <td>[Neovim](https://neovim.io/)</td>
-    <td>[Noto Sans Mono](https://www.google.com/get/noto/)</td>
-    <td>[Nord](https://www.nordtheme.com/)</td>
+    <td><a href="https://www.archlinux.org/">Arch Linux</a></td>
+    <td><a href="https://i3wm.org/">i3 wm</a> with <a href="https://github.com/polybar/polybar">polybar</a></td>
+    <td><a href="https://github.com/alacritty/alacritty">Alacritty</a></td>
+    <td><a href="https://wiki.archlinux.org/index.php/Zsh">Zsh</a></td>
+    <td><a href="https://neovim.io/">Neovim</a></td>
+    <td><a href="https://www.google.com/get/noto/">Noto Sans Mono</a></td>
+    <td><a href="https://www.nordtheme.com/">Nord</a></td>
   </tr>
 </table>
 
