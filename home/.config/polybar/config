@@ -156,6 +156,6 @@ margin-bottom = -8
 
 [module/steam]
 type = custom/script
-interval = 1
+interval = 5
 exec = ~/.config/polybar/steam
 click-left = steam
