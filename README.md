@@ -6,19 +6,19 @@ Everything is optimized for a dual-monitor desktop setup.
 <table>
   <tr>
     <th>OS</th>
-    <th>Desktop Environment</th>
+    <th>Desktop</th>
     <th>Terminal</th>
     <th>Shell</th>
     <th>Editor</th>
     <th>Font</th>
   </tr>
   <tr>
-    <td>Arch Linux</td>
-    <td>i3 wm</td>
-    <td>Alacritty</td>
-    <td>Zsh</td>
-    <td>Neovim</td>
-    <td>Noto Sans Mono</td>
+    <td>[Arch Linux](https://www.archlinux.org/)</td>
+    <td>[i3 wm](https://i3wm.org/) with [polybar](https://github.com/polybar/polybar)</td>
+    <td>[Alacritty](https://github.com/alacritty/alacritty)</td>
+    <td>[Zsh](https://wiki.archlinux.org/index.php/Zsh)</td>
+    <td>[Neovim](https://neovim.io/)</td>
+    <td>[Noto Sans Mono](https://www.google.com/get/noto/)</td>
   </tr>
 </table>
 
