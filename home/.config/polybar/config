@@ -43,7 +43,7 @@ font-1 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = spotify
-modules-right = alsa date
+modules-right = steam alsa date
 
 tray-position = none
 tray-padding = 2
@@ -154,3 +154,8 @@ screenchange-reload = true
 margin-top = 0
 margin-bottom = -8
 
+[module/steam]
+type = custom/script
+interval = 1
+exec = ~/.config/polybar/steam
+click-left = steam

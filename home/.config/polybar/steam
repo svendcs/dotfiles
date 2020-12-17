@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# /home/svendcs/.local/share/Steam/ubuntu12_32/steam
+# pgrep -x steam>& /dev/null
+# if [ $? -eq 0 ]; then
+#   echo "Hello"
+# fi
+
+STEAM_PATH="/home/svendcs/.local/share/Steam/ubuntu12_32/steam"
+
+if pgrep -f "$STEAM_PATH" > /dev/null; then
+  echo ""
+else
+  echo ""
+fi
