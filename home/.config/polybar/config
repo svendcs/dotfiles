@@ -45,7 +45,7 @@ modules-left = i3
 modules-center = spotify
 modules-right = alsa date
 
-tray-position = right
+tray-position = none
 tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
