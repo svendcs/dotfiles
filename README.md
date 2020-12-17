@@ -11,6 +11,7 @@ Everything is optimized for a dual-monitor desktop setup.
     <th>Shell</th>
     <th>Editor</th>
     <th>Font</th>
+    <th>Colors</th>
   </tr>
   <tr>
     <td>[Arch Linux](https://www.archlinux.org/)</td>
@@ -19,6 +20,7 @@ Everything is optimized for a dual-monitor desktop setup.
     <td>[Zsh](https://wiki.archlinux.org/index.php/Zsh)</td>
     <td>[Neovim](https://neovim.io/)</td>
     <td>[Noto Sans Mono](https://www.google.com/get/noto/)</td>
+    <td>[Nord](https://www.nordtheme.com/)</td>
   </tr>
 </table>
 
