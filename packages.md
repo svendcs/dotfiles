@@ -2,62 +2,66 @@ Arch Packages
 =============
 This file lists the non-trivial packages installed on my Arch Linux system.
 
-Arch Linux Repositories
------------------------
+Arch Linux Repositories (Desktop System)
+----------------------------------------
+* alacritty
 * arc-gtk-theme
-* biber
 * bluez
 * bluez-utils
-* picom
 * cups
+* dhcpcd
 * dunst
 * feh
 * firefox
 * fzf
 * gdb
+* gimp
+* gnome-keyring
 * htop
 * i3-gaps
 * i3lock
 * imagemagick
+* lightdm
+* lightdm-pantheon-greeter
 * networkmanager
-* ninja
 * noto-fonts
-* noto-fonts-emoji
 * noto-fonts-cjk
+* noto-fonts-emoji
 * noto-fonts-extra
 * nvim
 * pamixer
 * pavucontrol
+* picom
 * playerctl
+* postgresql
 * pulseaudio
 * pulseaudio-alsa
+* pulseaudio-bluetooth
 * python-dbus
 * ranger
+* redshift
+* reflector
 * rofi
 * samba
 * scrot
 * sxiv
 * syncthing
-* texlive-most
 * the_silver_searcher
+* thunar
 * tmux
 * tree
 * ufw
-* wget
+* unzip
 * xclip
 * yarn
 * zathura
 * zathura-pdf-mupdf
 * zathura-ps
+* zip
 * zsh
-* lightdm
-* lightdm-pantheon-greeter
-* redshift
-* alacritty
-* gnome-keyring
 
-Arch User Repositories
-----------------------
+Arch User Repositories (Desktop System)
+---------------------------------------
 * antigen-git
 * bitwarden
 * neovim-plug
@@ -67,4 +71,20 @@ Arch User Repositories
 * ttf-font-awesome-4
 * yay
 * logiops-git
+
+Packages for C++ Development
+----------------------------
+* meson
+* rapidjson
+* cmake
+* boost
+* botan
+* ninja
+* cereal
+
+Packages for Academia
+---------------------
+* texlive-most
+* ipe (AUR)
+* cgal-ipelets (AUR)
 
