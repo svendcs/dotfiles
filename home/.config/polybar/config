@@ -8,7 +8,7 @@
 ;=====================================================
 
 [colors]
-background = #2f343fa36
+background = #082f343f
 foreground = ${xrdb:*.color15:#FF0000}
 color1 = ${xrdb:*.color1:#FF0000}
 color4 = ${xrdb:*.color4:#FF0000}
