@@ -44,6 +44,7 @@ set incsearch
 set nohlsearch
 set conceallevel=0
 let g:vim_json_syntax_conceal=0
+let g:tex_flavor = 'latex'
 set wildmode=longest,list,full
 set wildmenu
 
