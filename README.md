@@ -34,3 +34,6 @@ The entire setup can be installed by roughly following the steps below:
 5. Clone the repository and run `./install` to symlink the dotfiles into place.
    If a file already exists you will be prompted to overwrite it.
 
+Screenshot
+----------
+![](screenshot.png)
