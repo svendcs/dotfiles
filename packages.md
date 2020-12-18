@@ -64,27 +64,27 @@ Arch User Repositories (Desktop System)
 ---------------------------------------
 * antigen-git
 * bitwarden
+* logiops-git
 * neovim-plug
 * paper-icon-theme-git
 * polybar
 * spotify
 * ttf-font-awesome-4
 * yay
-* logiops-git
 
 Packages for C++ Development
 ----------------------------
-* meson
-* rapidjson
-* cmake
 * boost
 * botan
-* ninja
 * cereal
+* cmake
+* meson
+* ninja
+* rapidjson
 
 Packages for Academia
 ---------------------
-* texlive-most
-* ipe (AUR)
 * cgal-ipelets (AUR)
+* ipe (AUR)
+* texlive-most
 
