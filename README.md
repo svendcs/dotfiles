@@ -28,10 +28,9 @@ Installing
 ----------
 The entire setup can be installed by roughly following the steps below:
 
-1. Install a base arch linux system by following the standard arch linux install guide.
+1. Install a base Arch Linux system by following the [Arch Wiki](https://wiki.archlinux.org/) guides. Use [arch-setup.md](arch-setup.md) as reference.
 2. Install system packages listed in [packages.md](packages.md).
 3. Install system-wide configuration files by running `sudo ./install-system`.
-4. Add smaller system-wide tweaks as described in [tweaks.md](tweaks.md).
 5. Clone the repository and run `./install` to symlink the dotfiles into place.
    If a file already exists you will be prompted to overwrite it.
 
