@@ -24,9 +24,15 @@ Everything is optimized for a dual-monitor desktop setup.
   </tr>
 </table>
 
+Screenshot
+----------
+![](screenshot.png)
+
 Installing
 ----------
-The entire setup can be installed by roughly following the steps below:
+The entire setup can be installed by roughly following the steps below.
+However, many of the configuration files contain details specific to me.
+Thus, this is *not* intended to be used by others than myself.
 
 1. Install a base Arch Linux system by following the [Arch Wiki](https://wiki.archlinux.org/) guides. Use [arch-setup.md](arch-setup.md) as reference.
 2. Install system packages listed in [packages.md](packages.md).
@@ -34,6 +40,3 @@ The entire setup can be installed by roughly following the steps below:
 5. Clone the repository and run `./install` to symlink the dotfiles into place.
    If a file already exists you will be prompted to overwrite it.
 
-Screenshot
-----------
-![](screenshot.png)
