@@ -24,3 +24,5 @@
     graph = log --graph --oneline --all
 [log]
 	date = local
+[init]
+	defaultBranch = master
