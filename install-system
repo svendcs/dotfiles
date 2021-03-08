@@ -6,6 +6,7 @@ chown root:root /etc/X11/xorg.conf.d/00-keyboard.conf
 cp system-config/logid.cfg /etc/logid.cfg
 chown root:root /etc/logid.cfg
 
+mkdir /etc/pacman.d/hooks
 cp system-config/mirrorupgrade.hook /etc/pacman.d/hooks/mirrorupgrade.hook
 chown root:root /etc/pacman.d/hooks/mirrorupgrade.hook
 
