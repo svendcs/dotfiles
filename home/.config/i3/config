@@ -105,13 +105,14 @@ bindsym XF86AudioPrev exec "playerctl previous"
 bindsym XF86AudioPlay exec "playerctl play-pause"
 bindsym XF86AudioNext exec "playerctl next"
 
-# assign applications to workspaces
-# assign [class="^Spotify$"] $ws7
+# assign applications to workspaces. Use `xprop` to find the class
 for_window [class="^Spotify$"] move to workspace $ws8
 for_window [class="^JudoAssistant$"] move to workspace $ws2
 for_window [class="^JudoAssistant Score$"] move to workspace $ws2
 for_window [class="^JudoAssistant Kiosk"] move to workspace $ws2
 for_window [class="^Bitwarden$"] move to workspace $ws9
+for_window [class="^discord$"] move to workspace $ws7
+for_window [class="^Signal$"] move to workspace $ws7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
