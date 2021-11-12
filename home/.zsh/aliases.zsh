@@ -11,10 +11,16 @@ alias gita='git add'
 
 # tmux
 alias tmn='tmux new-session -s'
-alias tmn-pwd='tmux new-session -s ${$(basename $(pwd)):l}'
 alias tml='tmux list-sessions'
 alias tmk='tmux kill-session -t'
 alias tma='tmux attach-session -d -t'
+
+function tmn-pwd() {
+  NAME=${$(basename $(pwd)):l}
+  CLEAN_NAME=${NAME:gs/\./-}
+  echo $CLEAN_NAME;
+  tmux new-session -s $CLEAN_NAME
+}
 
 
 # c++ dev
