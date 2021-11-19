@@ -1,5 +1,31 @@
+# Plugins
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-commentary'
+
 let mapleader=","
 
+set clipboard+=unnamed
 imap jk <ESC>
 set relativenumber
+set scrolloff=5
+set ignorecase " Required for smartcase
+set smartcase
+set incsearch
+set nohlsearch
 
+map <silent> <leader>q :q<CR>
+map <silent> <leader>q :q<CR>
+map <silent> <leader>w :w<CR>
+map <silent> <leader>n :NERDTreeToggle<CR>
+map <silent> <leader>i :action GotoFile<CR>
+map <silent> <leader>o :action GotoSymbol<CR>
+map <silent> <leader>p :action GotoClass<CR>
+map <silent> <leader>s :source ~/.ideavimrc<CR>
+
+# Moving
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <C-H> <C-W>h
+
+nmap <CR> o<Esc>
