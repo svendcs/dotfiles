@@ -6,12 +6,16 @@ let mapleader=","
 
 set clipboard+=unnamed
 imap jk <ESC>
+set number
 set relativenumber
 set scrolloff=5
 set ignorecase " Required for smartcase
 set smartcase
 set incsearch
 set nohlsearch
+set wildmode=longest,list,full
+set wildmenu
+set ideajoin
 
 map <silent> <leader>q :q<CR>
 map <silent> <leader>q :q<CR>
