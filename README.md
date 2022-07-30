@@ -20,7 +20,7 @@ Everything is optimized for a dual-monitor desktop setup.
     <td><a href="https://wiki.archlinux.org/index.php/Zsh">Zsh</a></td>
     <td><a href="https://neovim.io/">Neovim</a></td>
     <td><a href="https://www.google.com/get/noto/">Noto Sans Mono</a></td>
-    <td><a href="https://www.nordtheme.com/">Nord</a></td>
+    <td><a href="https://github.com/catppuccin/catppuccin">Catppuccin</a></td>
   </tr>
 </table>
 
