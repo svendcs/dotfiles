@@ -51,6 +51,7 @@ let g:tex_flavor = 'latex'
 set wildmode=longest,list,full
 set wildmenu
 set completeopt=menuone,noinsert,noselect
+set mouse=a
 
 " File association
 au BufRead,BufNewFile *.gnuplot setfiletype gnuplot
