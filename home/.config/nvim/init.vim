@@ -9,7 +9,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -61,7 +62,6 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
-nnoremap <silent> <leader>p :FZF<CR>
 nnoremap <silent> \ :Ag<space>
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 nmap <silent> <leader>w :update<CR>
@@ -98,10 +98,4 @@ autocmd FileType zsh setlocal commentstring=#\ %s
 autocmd FileType cmake setlocal commentstring=#\ %s
 autocmd FileType gnuplot setlocal commentstring=#\ %s
 autocmd FileType meson setlocal commentstring=#\ %s
-
-" FZF keybindings
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-s': 'split',
-  \ 'ctrl-v': 'vsplit' }
 
