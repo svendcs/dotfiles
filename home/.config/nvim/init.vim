@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/neobundle.vim
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'arcticicestudio/nord-vim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'nvim-lua/plenary.nvim'
@@ -26,7 +26,6 @@ Plug 'elzr/vim-json', { 'for': 'json' }
 call plug#end()
 
 syntax on
-colorscheme nord
 
 set tabstop=2
 set shiftwidth=2
