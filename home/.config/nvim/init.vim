@@ -53,30 +53,30 @@ set wildmode=longest,list,full
 set wildmenu
 set completeopt=menuone,noinsert,noselect
 
+" File association
 au BufRead,BufNewFile *.gnuplot setfiletype gnuplot
 au BufRead,BufNewFile *.vue setfiletype html
 
-" Moving
+" Moving and editing
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
+imap jk <ESC>
+noremap Y y$
+nmap <CR> o<Esc>
 
-nnoremap <silent> \ :Ag<space>
-nmap <silent> <leader>n :NERDTreeToggle<CR>
+" File I/O
 nmap <silent> <leader>w :update<CR>
 nmap <silent> <leader>q :q<CR>
-nmap <silent> <leader>gd :Gdiff<CR>
-nmap <silent> <leader>gb :Gblame<CR>
+
+" Pane manipilation
 nmap <silent> <leader>+ :exe "resize" . (winheight(0) * 3/2)<CR>
 nmap <silent> <leader>- :exe "resize" . (winheight(0) * 2/3)<CR>
-" nmap <silent>K :Lspsaga hover_doc<CR>
-" imap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
-" nmap <silent> gh <Cmd>Lspsaga lsp_finder<CR>
-nmap <CR> o<Esc>
-noremap Y y$
 
-imap jk <ESC>
+" nerdtree
+nmap <silent> <leader>n :NERDTreeToggle<CR>
+
 let NERDTreeMapHelp=''
 let NERDTreeMapOpenInTab = '<C-T>'
 let NERDTreeMapOpenSplit = '<C-S>'
@@ -86,10 +86,11 @@ let NERDTreeShowHidden=1
 
 set wildignore+=node_modules/**
 
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" vim-fugitive
+nmap <silent> <leader>gd :Git diff<CR>
+nmap <silent> <leader>gb :Git blame<CR>
 
-" Comment strings
+" vim-commentary
 autocmd FileType c setlocal commentstring=//\ %s
 autocmd FileType conf setlocal commentstring=#\ %s
 autocmd FileType cpp setlocal commentstring=//\ %s
