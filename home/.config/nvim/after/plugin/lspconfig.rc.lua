@@ -1,10 +1,11 @@
 local lspconfig = require('lspconfig')
+local coq = require('coq')
 
 local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
   vim.api.nvim_buf_set_option(0, "formatexpr", "v:lua.vim.lsp.formatexpr()")
 
-    local opts = { noremap = true, silent = true }
+  -- local opts = { noremap = true, silent = true }
 
   -- Key mappings
   vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
@@ -50,6 +51,10 @@ local on_attach = function(client, bufnr)
 end
 
 lspconfig.clangd.setup {
-  on_attach = on_attach
+  on_attach = on_attach,
+  capabilities = coq.lsp_ensure_capabilities()
 }
+
+-- lspconfig.clangd.setup()
+vim.cmd([[COQnow]])
 
