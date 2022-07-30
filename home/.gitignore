@@ -48,4 +48,6 @@ tmp/**/*
 Procfile.simon
 *.sublime-workspace
 build
+compile_commands.json
+.cache
 
