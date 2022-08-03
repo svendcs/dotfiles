@@ -5,3 +5,4 @@ lsp_signature.setup({
     border = "rounded",
   },
 })
+
