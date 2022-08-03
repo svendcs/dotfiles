@@ -26,4 +26,5 @@ opts = {
 }
 
 lspconfig.clangd.setup(opts)
+lspconfig.gopls.setup(opts)
 
