@@ -18,6 +18,7 @@
   protocol = ssh
 [push]
 	default = simple
+	autoSetupRemote = true
 [pull]
 	default = simple
 [alias]
