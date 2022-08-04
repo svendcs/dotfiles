@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-path=("$HOME/.utility" $path)
+path=("$HOME/.utility" "$GOPATH/bin" $path)
 
 export PATH
 

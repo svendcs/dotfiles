@@ -28,3 +28,5 @@ opts = {
 lspconfig.clangd.setup(opts)
 lspconfig.gopls.setup(opts)
 
+vim.api.nvim_exec([[ autocmd BufWritePre *.go :silent! lua vim.lsp.buf.formatting_sync(nil,500) ]], false)
+

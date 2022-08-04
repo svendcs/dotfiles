@@ -59,6 +59,7 @@ Arch Linux Repositories (Desktop System)
 * zathura-ps
 * zip
 * zsh
+* sad
 
 Arch User Repositories (Desktop System)
 ---------------------------------------
@@ -81,6 +82,10 @@ Packages for C++ Development
 * meson
 * ninja
 * rapidjson
+
+Packages for Go Development
+---------------------------
+* go
 
 Packages for Academia
 ---------------------
