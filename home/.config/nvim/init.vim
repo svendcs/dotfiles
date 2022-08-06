@@ -11,7 +11,6 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -19,6 +18,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'ms-jpq/coq_nvim'
+Plug 'ms-jpq/chadtree', {'branch': 'chad'}
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'elzr/vim-json', { 'for': 'json' }
@@ -74,15 +74,8 @@ nmap <silent> <leader>q :q<CR>
 nmap <silent> <leader>+ :exe "resize" . (winheight(0) * 3/2)<CR>
 nmap <silent> <leader>- :exe "resize" . (winheight(0) * 2/3)<CR>
 
-" nerdtree
-nmap <silent> <leader>n :NERDTreeToggle<CR>
-
-let NERDTreeMapHelp=''
-let NERDTreeMapOpenInTab = '<C-T>'
-let NERDTreeMapOpenSplit = '<C-S>'
-let NERDTreeMapOpenVSplit = '<C-V>'
-let NERDTreeIgnore = ['\.git', '\.pyc$']
-let NERDTreeShowHidden=1
+" CHADtree
+nmap <silent> <leader>n :CHADopen<CR>
 
 set wildignore+=node_modules/**
 
