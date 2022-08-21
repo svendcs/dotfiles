@@ -46,6 +46,7 @@ set smartcase
 set incsearch
 set nohlsearch
 set conceallevel=0
+set colorcolumn=100
 let g:vim_json_syntax_conceal=0
 let g:tex_flavor = 'latex'
 set wildmode=longest,list,full
