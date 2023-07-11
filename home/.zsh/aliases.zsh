@@ -4,7 +4,8 @@ CORES=12
 
 # git aliases
 alias gitc='git commit'
-alias gitl='git log'
+alias gitca='git commit --amend --no-edit'
+alias gitl='git log --name-status'
 alias gitd='git diff'
 alias gits='git status'
 alias gita='git add'
