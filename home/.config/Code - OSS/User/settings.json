@@ -11,6 +11,10 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
+            "before": ["<ENTER>"],
+            "after": ["o", "<ESC>"]
+        },
+        {
             "before": ["<C-h>"],
             "after": ["<C-w>", "h"]
         },
@@ -64,5 +68,8 @@
         }
     ],
     "editor.lineNumbers": "relative",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "editor.inlayHints.enabled": "off",
+    "explorer.confirmDelete": false,
+    "workbench.editor.openSideBySideDirection": "down"
 }
