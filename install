@@ -3,30 +3,31 @@
 
 files=$(find home -type f | cut -sd / -f 2-)
 for file in $files; do
+    echo "$file"
     path="$(pwd)/home/$file"
-    base=$(basename $path)
+    base=$(basename "$path")
 
     target="$HOME/$file"
-    target_dir=$(dirname $target)
+    target_dir=$(dirname "$target")
 
     blue='\033[34m'
     nc='\033[0m'
 
-    if [[ ! -d $target_dir ]]; then
-        mkdir -p $target_dir
+    if [[ ! -d "$target_dir" ]]; then
+        mkdir -p "$target_dir"
     fi
 
-    if [[ -h $target && ($(readlink $target) == $path)]]; then
+    if [[ -h "$target" && ($(readlink "$target") == "$path")]]; then
         echo -e "${blue}\"$file\" already symlinked. Skipping.${nc}"
     elif [[ -a $target ]]; then
         read -p "\"$file\" exists. Override? [yn]"
 
         if [[ $REPLY =~ [yY]* ]]; then
-            ln -sf $path $target
+            ln -sf "$path" "$target"
         fi
     else
         echo "\"$file\" does not exist. Symlinking to dotfile."
-        ln -sf $path $target
+        ln -sf "$path" "$target"
     fi
 
 done
