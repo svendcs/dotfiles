@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCREENSHOT_DIR=$HOME/pictures/Screenshots
+SCREENSHOT_DIR=$HOME/Pictures/Screenshots
 
 mkdir -p $SCREENSHOT_DIR
 scrot "$SCREENSHOT_DIR/%Y-%m-%d-%H-%M-%S.png"
