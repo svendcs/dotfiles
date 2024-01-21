@@ -3,7 +3,6 @@
 
 files=$(find home -type f | cut -sd / -f 2-)
 for file in $files; do
-    echo "$file"
     path="$(pwd)/home/$file"
     base=$(basename "$path")
 
